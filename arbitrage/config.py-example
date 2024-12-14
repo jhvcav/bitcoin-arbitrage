@@ -1,53 +1,39 @@
 markets = [
-    "BitFlyerEUR",
-    "BitFlyerUSD",
-    "BitfinexEUR",
-    "BitfinexUSD",
-    "BitstampEUR",
-    "BitstampUSD",
-    "CampBXUSD",
-    "CEXEUR",
-    "CEXUSD",
-    "GDAXEUR",
-    "GDAXUSD",
-    "GeminiUSD",
-    "KrakenEUR",
-    "KrakenUSD",
-    "OKCoinCNY",
-    "PaymiumEUR",
+    "KuCoinBTC-USDT",
+    "KuCoinETH-USDT",
+    "BinanceBTC-USDT",
+    "BinanceETH-USDT",
 ]
 
 # observers if any
-# ["Logger", "DetailedLogger", "TraderBot", "TraderBotSim", "HistoryDumper", "Emailer"]
-observers = ["Logger"]
+observers = ["Logger", "TraderBotSim"]
 
-market_expiration_time = 120  # in seconds: 2 minutes
-
-refresh_rate = 60
+market_expiration_time = 180  # 3 minutes
+refresh_rate = 30  # Rafraîchissement toutes les 30 secondes
 
 #### Trader Bot Config
 # Access to Private APIs
 
-paymium_username = "FIXME"
-paymium_password = "FIXME"
-paymium_address = "FIXME"  # to deposit btc from markets / wallets
+kucoin_api_key = "YOUR_KUCOIN_API_KEY"
+kucoin_api_secret = "YOUR_KUCOIN_API_SECRET"
+kucoin_api_passphrase = "YOUR_KUCOIN_API_PASSPHRASE"
 
-bitstamp_username = "FIXME"
-bitstamp_password = "FIXME"
+binance_api_key = "YOUR_BINANCE_API_KEY"
+binance_api_secret = "YOUR_BINANCE_API_SECRET"
 
 # SafeGuards
-max_tx_volume = 10  # in BTC
-min_tx_volume = 1  # in BTC
-balance_margin = 0.05  # 5%
-profit_thresh = 1  # in EUR
-perc_thresh = 2  # in %
+max_tx_volume = 0.5  # 0.5 ETH maximum
+min_tx_volume = 0.01  # 0.01 ETH minimum
+balance_margin = 0.1  # 10% de marge
+profit_thresh = 10  # Minimum 10 USDT de profit
+perc_thresh = 1  # Minimum 1% de profit
 
 #### Emailer Observer Config
-smtp_host = "FIXME"
-smtp_login = "FIXME"
-smtp_passwd = "FIXME"
-smtp_from = "FIXME"
-smtp_to = "FIXME"
+smtp_host = "smtp.gmail.com"
+smtp_login = "jeanhugues.cavalie@gmail.com"
+smtp_passwd = "vwkdpmzh125!"
+smtp_from = "jeanhugues.cavalie@gmail.com"
+smtp_to = "jhv.cavalie73@gmail.com"
 
 #### XMPP Observer
 xmpp_jid = "FROM@jabber.org"
