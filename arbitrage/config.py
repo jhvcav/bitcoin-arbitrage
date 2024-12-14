@@ -14,9 +14,9 @@ refresh_rate = 30  # Rafraîchissement toutes les 30 secondes
 #### Trader Bot Config
 # Access to Private APIs
 
-kucoin_api_key = "YOUR_KUCOIN_API_KEY"
-kucoin_api_secret = "YOUR_KUCOIN_API_SECRET"
-kucoin_api_passphrase = "YOUR_KUCOIN_API_PASSPHRASE"
+kucoin_api_key = "675acaaff749cc0001bc1f50"
+kucoin_api_secret = "46dbe691-8fcf-4177-9034-6d4d160ce41b"
+kucoin_api_passphrase = "AZE4xyGY125!"
 
 binance_api_key = "YOUR_BINANCE_API_KEY"
 binance_api_secret = "YOUR_BINANCE_API_SECRET"
