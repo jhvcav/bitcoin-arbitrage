@@ -6,7 +6,7 @@ import sys
 import glob
 import os
 import inspect
-from arbitrage.arbitrer import Arbitrer
+from arbitrage import Arbitrer
 from arbitrage import public_markets
 
 
